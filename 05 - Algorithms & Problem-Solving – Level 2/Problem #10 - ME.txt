@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a;
+    cin >> a;
+
+    int temp = a;
+    int divisor = 1;
+
+    while (temp >= 10) {
+        temp /= 10;
+        divisor *= 10;
+    }
+
+    while (divisor > 0) {
+        int digit = a / divisor;  
+        cout << digit << endl;
+        a %= divisor;            
+        divisor /= 10;           
+    }
+}

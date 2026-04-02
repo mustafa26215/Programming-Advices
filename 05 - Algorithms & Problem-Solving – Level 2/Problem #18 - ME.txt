@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string text;
+    cin >> text; 
+
+    int shift = 2;  
+    string encrypted = "";
+    string decrypted = "";
+
+   
+    for (int i = 0; i < text.length(); i++) {
+        char c = text[i];
+        encrypted += char(c + shift);
+    }
+
+
+    for (int i = 0; i < encrypted.length(); i++) {
+        char c = encrypted[i];
+        decrypted += char(c - shift);
+    }
+
+    cout << "Text Before Encryption : " << text << endl;
+    cout << "Text After Encryption : " << encrypted << endl;
+    cout << "Text After Decryption : " << decrypted << endl;
+
+    return 0;
+}

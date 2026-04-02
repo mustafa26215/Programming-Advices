@@ -1,0 +1,23 @@
+#include <iostream>
+#include <cstdlib>  
+#include <ctime>    
+using namespace std;
+
+int main() {
+    srand(time(0));  
+
+    char upper = 'A' + rand() % 26;
+    cout << upper << endl;
+
+    char lower = 'a' + rand() % 26;
+    cout << lower << endl;
+
+    string specials = "!@#$%^&*()_+-={}[]|:;<>,.?/~";
+    char special = specials[rand() % specials.length()];
+    cout << special << endl;
+
+    char digit = '0' + rand() % 10;
+    cout << digit << endl;
+
+    return 0;
+}

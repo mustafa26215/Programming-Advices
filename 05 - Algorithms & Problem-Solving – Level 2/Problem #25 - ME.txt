@@ -1,0 +1,39 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int findMin(int arr[], int size) {
+    int min = arr[0];
+    for(int i = 1; i < size; i++) {
+        if(arr[i] < min) {
+            min = arr[i];
+        }
+    }
+    return min;
+}
+
+int main() {
+    int n;
+    int arr[100];
+
+    cin >> n;
+
+    if(n < 1 || n > 100) {
+        return 1;
+    }
+
+    srand(time(0));
+
+    for(int i = 0; i < n; i++) {
+        arr[i] = rand() % 100 + 1;
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    int minNumber = findMin(arr, n);
+    cout << "Min Number is: " << minNumber << endl;
+
+    return 0;
+}

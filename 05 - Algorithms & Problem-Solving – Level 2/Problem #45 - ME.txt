@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main() {
+    int arr[100];
+    int n;
+    cin >> n;
+    
+    srand(time(0));
+    
+    for (int i = 0; i < n; i++)
+        arr[i] = rand() % 201 - 100;
+    
+    cout << "Array Elements: ";
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+    
+    int count = 0;
+    for (int i = 0; i < n; i++)
+        if (arr[i] < 0)
+            count++;
+    
+    cout << "Negative Numbers count is: " << count << endl;
+    
+    return 0;
+}

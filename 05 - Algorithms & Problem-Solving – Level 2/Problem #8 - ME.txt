@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a, digit;
+    cin >> a;
+    cin >> digit;
+
+    int count = 0;
+
+    while (a > 0) {
+        int remainder = a % 10;
+
+        if (remainder == digit) {
+            count++;
+        }
+
+        a /= 10;
+    }
+
+    cout << "Digit " << digit << " Frequency is " << count << " Time(s)." << endl;
+}

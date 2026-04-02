@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double n;
+    cin >> n;
+    
+    int myFloor = (n >= 0) ? (int)n : (int)n - 1;
+    
+    if ((double)myFloor == n)
+        myFloor = (int)n;
+    
+    cout << "My MyFloor Result : " << myFloor << endl;
+    cout << "C++ floor Result  : " << (int)floor(n) << endl;
+    
+    return 0;
+}

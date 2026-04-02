@@ -1,0 +1,15 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+    
+    int myAbs = (n < 0) ? -n : n;
+    
+    cout << "My abs Result : " << myAbs << endl;
+    cout << "C++ abs Result: " << abs(n) << endl;
+    
+    return 0;
+}

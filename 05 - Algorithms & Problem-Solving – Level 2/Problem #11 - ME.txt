@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    cin >> a;
+
+    int original = a; 
+
+    int Reversed = 0;
+    while (a > 0) {
+        int remainder = a % 10;
+        Reversed = Reversed * 10 + remainder;
+        a /= 10;
+    }
+
+    if (Reversed == original) {
+        cout << "\nYes , it is a Palindrome number.\n";
+    }
+    else {
+        cout << "\nNo , it is NOT a Palindrome number.\n";
+    }
+}

@@ -1,0 +1,53 @@
+#include <iostream>
+#include <cstdlib>   // for rand() and srand()
+#include <ctime>     // for time()
+
+using namespace std;
+
+// Function to fill array with random numbers from 1 to 100
+void fillArray(int arr[], int n) {
+    for(int i = 0; i < n; i++) {
+        arr[i] = rand() % 100 + 1;  // random number between 1 and 100
+    }
+}
+
+// Function to print array elements
+void printArray(int arr[], int n) {
+    cout << "Array Elements: ";
+    for(int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
+
+// Function to calculate average of array elements
+double calculateAverage(int arr[], int n) {
+    int sum = 0;
+    for(int i = 0; i < n; i++) {
+        sum += arr[i];
+    }
+    return static_cast<double>(sum) / n;
+}
+
+int main() {
+    int n;
+    int arr[100];
+
+    cout << "Enter number of elements: ";
+    cin >> n;
+
+    if(n > 100 || n <= 0) {
+        cout << "Invalid input! Number should be between 1 and 100." << endl;
+        return 1;
+    }
+
+    srand(time(0));  // seed for random numbers
+
+    fillArray(arr, n);
+    printArray(arr, n);
+
+    double avg = calculateAverage(arr, n);
+    cout << "Average of all number is: " << static_cast<int>(avg) << endl;
+
+    return 0;
+}

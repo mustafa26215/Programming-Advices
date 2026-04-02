@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string password;
+    cin >> password;  
+
+    int trial = 0;
+
+    for (char i = 'A'; i <= 'Z'; i++) {
+        for (char j = 'A'; j <= 'Z'; j++) {
+            for (char k = 'A'; k <= 'Z'; k++) {
+                trial++;
+                string attempt = "";
+                attempt += i;
+                attempt += j;
+                attempt += k;
+
+                cout << "Trial [" << trial << "]: " << attempt << endl;
+
+                if (attempt == password) {
+                    cout << "Password is " << password << endl;
+                    cout << "Found after " << trial << " Trial(s)" << endl;
+                    return 0; 
+                }
+            }
+        }
+    }
+}

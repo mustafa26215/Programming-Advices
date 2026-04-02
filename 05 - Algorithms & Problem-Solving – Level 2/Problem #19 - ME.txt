@@ -1,0 +1,16 @@
+#include <iostream>
+#include <ctime>
+using namespace std;
+
+int main() {
+    int t = time(0); 
+    int a1 = (t * 3) % 10 + 1; 
+    int a2 = (t * 5) % 10 + 1; 
+    int a3 = (t * 7) % 10 + 1; 
+
+    cout << a1 << endl;
+    cout << a2 << endl;
+    cout << a3 << endl;
+
+    return 0;
+}

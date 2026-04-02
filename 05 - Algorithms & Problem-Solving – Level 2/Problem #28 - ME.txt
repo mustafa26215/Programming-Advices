@@ -1,0 +1,38 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+void fillArray(int arr[], int n) {
+    for(int i = 0; i < n; i++)
+        arr[i] = rand() % 100 + 1;
+}
+
+void printArray(int arr[], int n, string name) {
+    cout << name << " elements: ";
+    for(int i = 0; i < n; i++)
+        cout << arr[i] << " ";
+    cout << endl;
+}
+
+void copyArray(int src[], int dest[], int n) {
+    for(int i = 0; i < n; i++)
+        dest[i] = src[i];
+}
+
+int main() {
+    int n, arr1[100], arr2[100];
+    cin >> n;
+    if(n > 100 || n <= 0) return 1;
+
+    srand(time(0));
+
+    fillArray(arr1, n);
+    copyArray(arr1, arr2, n);
+
+    printArray(arr1, n, "Array 1");
+    printArray(arr2, n, "Array 2 after copy");
+
+    return 0;
+}

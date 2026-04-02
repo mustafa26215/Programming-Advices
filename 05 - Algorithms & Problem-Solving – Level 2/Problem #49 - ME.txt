@@ -1,0 +1,18 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double n;
+    cin >> n;
+    
+    int myCeil = (n >= 0) ? (int)n + 1 : (int)n;
+    
+    if ((double)(int)n == n)
+        myCeil = (int)n;
+    
+    cout << "My MyCeil Result : " << myCeil << endl;
+    cout << "C++ Ceil Result  : " << (int)ceil(n) << endl;
+    
+    return 0;
+}

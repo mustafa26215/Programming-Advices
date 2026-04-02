@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double n;
+    cin >> n;
+    
+    double mySqrt = 1;
+    for (int i = 0; i < 1000; i++)
+        mySqrt = (mySqrt + n / mySqrt) / 2;
+    
+    cout << "My MySqrt Result : " << mySqrt << endl;
+    cout << "C++ sqrt Result: " << sqrt(n) << endl;
+    
+    return 0;
+}

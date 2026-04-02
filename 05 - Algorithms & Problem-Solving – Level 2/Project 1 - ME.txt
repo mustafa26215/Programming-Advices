@@ -1,0 +1,60 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+int main() {
+    srand(time(0));
+
+    char playAgain = 'Y';
+
+    while (playAgain == 'Y' || playAgain == 'y') {
+        int player1Wins = 0, computerWins = 0, draws = 0;
+
+        for (int round = 1; round <= 3; round++) {
+            cout << "\n--- Round " << round << " ---\n";
+            cout << "[1] Stone  [2] Paper  [3] Scissors\n";
+            cout << "Your choice: ";
+
+            int playerChoice;
+            cin >> playerChoice;
+
+            int computerChoice = rand() % 3 + 1;
+
+            string choices[3] = {"Stone", "Paper", "Scissors"};
+            cout << "Computer chose: " << choices[computerChoice - 1] << endl;
+
+            if (playerChoice == computerChoice) {
+                cout << "Draw!\n";
+                draws++;
+            }
+            else if ((playerChoice == 1 && computerChoice == 3) ||
+                     (playerChoice == 2 && computerChoice == 1) ||
+                     (playerChoice == 3 && computerChoice == 2)) {
+                cout << "You win this round!\n";
+                player1Wins++;
+            }
+            else {
+                cout << "Computer wins this round!\n";
+                computerWins++;
+            }
+        }
+
+        cout << "\n===== Game Results =====\n";
+        cout << "You won: " << player1Wins << " round(s)\n";
+        cout << "Computer won: " << computerWins << " round(s)\n";
+        cout << "Draws: " << draws << "\n";
+
+        if (player1Wins > computerWins)
+            cout << "You win the game!\n";
+        else if (computerWins > player1Wins)
+            cout << "Computer wins the game!\n";
+        else
+            cout << "It's a draw!\n";
+
+        cout << "\nPlay again? (Y/N): ";
+        cin >> playAgain;
+    }
+
+    return 0;
+}
