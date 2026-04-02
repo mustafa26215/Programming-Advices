@@ -1,0 +1,73 @@
+#include <iostream>
+using namespace std;
+int main() {
+	string Name;
+	cout << "Enter your name ?\n";
+	cin >> Name;
+	double Age;
+	cout << "Enter your Age ?\n";
+	cin >> Age;
+	string City;
+	cout << "Enter your City ?\n";
+	cin >> City;
+	string Country;
+	cout << "Enter your Country ?\n";
+	cin >> Country;
+	double MontlySalary;
+	cout << "Enter your Montly Salary ?\n";
+	cin >> MontlySalary;
+	double YearlySalary;
+	cout << "Enter your Yearly Salary ?\n";
+	cin >> YearlySalary;
+	char Gender;
+	cout << "Enter your Gender ?\n";
+	cin >> Gender;
+	bool IsMarried;
+	cout << "Enter your Marrital Status ?\n";
+	cin >> IsMarried;
+
+	cout << "*******************************\n";
+	cout << "Name : " << Name << endl;
+	cout << "Age : " << Age << endl;
+	cout << "City : " << City << endl;
+	cout << "Country : " << Country << endl;
+	cout << "Montly Salary : " << MontlySalary << endl;
+	cout << "Yearly Salary : " << YearlySalary << endl;
+	cout << "Gender : " << Gender << endl;
+	cout << "Married : " << IsMarried << endl;
+	cout << "*******************************\n";
+
+
+}
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, c;
+	cout << "Enter 3 Numbers ?" << endl;
+	cin >> a >> b >> c;
+	cout << a << " + \n";
+	cout << b << " + \n";
+	cout << c << "  \n";
+	cout << "------------------------------\n";
+	cout << "Total = " << a + b + c;
+
+
+
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+	int Age;
+	
+	cout << "Enter your age ?" << endl;
+	cin >> Age;
+	cout << "After 5 years you will be " << Age + 5 << " years old." << endl;
+
+
+
+}
+

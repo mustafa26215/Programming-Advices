@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double num1, num2;
+    char operationType;
+
+    // Read inputs
+    cout << "Enter Number 1: ";
+    cin >> num1;
+
+    cout << "Enter Number 2: ";
+    cin >> num2;
+
+    cout << "Enter Operation (+, -, *, /): ";
+    cin >> operationType;
+
+    // Perform operation
+    if (operationType == '+')
+        cout << num1 + num2;
+
+    else if (operationType == '-')
+        cout << num1 - num2;
+
+    else if (operationType == '*')
+        cout << num1 * num2;
+
+    else if (operationType == '/')
+    {
+        if (num2 != 0)
+            cout << num1 / num2;
+        else
+            cout << "Cannot divide by zero";
+    }
+
+    else
+        cout << "Wrong Operation";
+
+    return 0;
+}

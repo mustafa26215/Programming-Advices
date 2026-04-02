@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+
+// Procedure to swap two numbers
+void Swap(int &num1, int &num2)
+{
+    int temp = num1;
+    num1 = num2;
+    num2 = temp;
+}
+
+int main()
+{
+    int num1, num2;
+
+    cout << "Enter Number 1: ";
+    cin >> num1;
+
+    cout << "Enter Number 2: ";
+    cin >> num2;
+
+    // print before swap
+    cout << "Before Swap:\n";
+    cout << num1 << endl;
+    cout << num2 << endl;
+
+    // call procedure
+    Swap(num1, num2);
+
+    // print after swap
+    cout << "After Swap:\n";
+    cout << num1 << endl;
+    cout << num2 << endl;
+
+    return 0;
+}

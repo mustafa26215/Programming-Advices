@@ -1,0 +1,82 @@
+Are the following valid variable names and why?
+
+Age → ✅ Valid (starts with a letter, no special characters).
+
+My-Age → ❌ Invalid (contains -, not allowed).
+
+My_Age → ✅ Valid (underscore _ is allowed).
+
+_Age → ✅ Valid (can start with underscore).
+
+2x → ❌ Invalid (cannot start with a number).
+
+X2 → ✅ Valid (starts with a letter).
+
+My Name → ❌ Invalid (contains a space).
+
+MyName → ✅ Valid (no spaces or special characters).
+
+#Name → ❌ Invalid (# not allowed).
+
+$Name → ❌ Invalid ($ not allowed in C++).
+
+N@me → ❌ Invalid (@ not allowed).
+
+int → ❌ Invalid (reserved keyword).
+
+float → ❌ Invalid (reserved keyword).
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+	string Name = "Mohamed Abu-Hadhoud";
+	double Age  = 44;
+	string City = "Amman";
+	string Country = "Jordan";
+	double MontlySalary = 5000;
+	double YearlySalary = 60000;
+	char Gender = 'M';
+	bool IsMarried = true;
+	cout << "*******************************\n";
+	cout << "Name : " << Name << endl;
+	cout << "Age : " << Age << endl;
+	cout << "City : " << City << endl;
+	cout << "Country : " << Country << endl;
+	cout << "Montly Salary : " << MontlySalary << endl;
+	cout << "Yearly Salary : " << YearlySalary << endl;
+	cout << "Gender : " << Gender << endl;
+	cout << "Married : " << IsMarried << endl;
+	cout << "*******************************\n";
+
+
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, c;
+	a = 20;
+	b = 30;
+	c = 10;
+	cout << a << " + \n";
+	cout << b << " + \n";
+	cout << c << "  \n";
+	cout << "------------------------------\n";
+	cout << "Total = " << a + b + c;
+
+
+
+}
+
+
+#include <iostream>
+using namespace std;
+int main() {
+	int Age = 25;
+	cout << "After 5 years you will be " << Age + 5 << " years old." << endl;
+
+
+
+}

@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double totalSales, percentage, totalCommission;
+
+    // Read Total Sales
+    cout << "Enter Total Sales: ";
+    cin >> totalSales;
+
+    // Determine Percentage
+    if (totalSales >= 1000000)
+        percentage = 0.01;
+    else if (totalSales >= 500000)
+        percentage = 0.02;
+    else if (totalSales >= 100000)
+        percentage = 0.03;
+    else if (totalSales >= 50000)
+        percentage = 0.05;
+    else
+        percentage = 0;
+
+    // Calculate Commission
+    totalCommission = totalSales * percentage;
+
+    // Print Result
+    cout << totalCommission;
+
+    return 0;
+}

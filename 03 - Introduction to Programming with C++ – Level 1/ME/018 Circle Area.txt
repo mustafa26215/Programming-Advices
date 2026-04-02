@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    double r, Area;
+    const double PI = 3.14;
+
+    cin >> r;
+
+    Area = PI * (r * r);
+
+    cout << ceil(Area);
+
+    return 0;
+}

@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int grades[3];
+    int sum = 0;
+
+    cout<<"Please Enter Grade 1: ";
+    cin>>grades[0];
+
+    cout<<"Please Enter Grade 2: ";
+    cin>>grades[1];
+
+    cout<<"Please Enter Grade 3: ";
+    cin>>grades[2];
+
+    for(int i=0; i<3; i++){
+        sum += grades[i];
+    }
+
+    double avg = (double)sum / 3;
+
+    cout<<"The average of grades is "<<avg;
+
+    return 0;
+}

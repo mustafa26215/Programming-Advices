@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num, a, b, c;
+
+    cout << "Enter number: ";
+    cin >> num;
+
+    a = num * num;              // num^2
+    b = num * num * num;        // num^3
+    c = num * num * num * num;  // num^4
+
+    cout << a << endl;
+    cout << b << endl;
+    cout << c << endl;
+
+    return 0;
+}

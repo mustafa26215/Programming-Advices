@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+
+enum Operation { ADD=1, SUB, MUL, DIV };
+
+int add(int a,int b){
+    return a+b;
+}
+
+int sub(int a,int b){
+    return a-b;
+}
+
+int mul(int a,int b){
+    return a*b;
+}
+
+int divide(int a,int b){
+    return a/b;
+}
+
+int calculator(int a,int b,Operation op){
+    if(op==ADD) return add(a,b);
+    else if(op==SUB) return sub(a,b);
+    else if(op==MUL) return mul(a,b);
+    else if(op==DIV) return divide(a,b);
+    return 0;
+}
+
+int main(){
+    int x,y,choice;
+
+    cout<<"Enter two numbers: ";
+    cin>>x>>y;
+
+    cout<<"1-Add 2-Sub 3-Mul 4-Div\n";
+    cin>>choice;
+
+    cout<<"Result = "<<calculator(x,y,(Operation)choice);
+
+    return 0;
+}

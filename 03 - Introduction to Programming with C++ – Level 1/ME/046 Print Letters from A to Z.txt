@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int Counter = 64;
+
+    while (Counter < 90)
+    {
+        Counter = Counter + 1;
+        cout << char(Counter) << endl;
+    }
+
+    return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    for (int i = 65; i <= 90; i++)
+    {
+        cout << char(i) << endl;
+    }
+
+    return 0;
+}

@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double TotalSeconds;
+    cin >> TotalSeconds;
+
+    long long TS = round(TotalSeconds);
+
+    int SecondsPerDay = 24 * 60 * 60;
+    int SecondsPerHour = 60 * 60;
+    int SecondsPerMinute = 60;
+
+    int Days = TS / SecondsPerDay;
+    TS %= SecondsPerDay;
+
+    int Hours = TS / SecondsPerHour;
+    TS %= SecondsPerHour;
+
+    int Minutes = TS / SecondsPerMinute;
+    TS %= SecondsPerMinute;
+
+    int Seconds = TS;
+
+    cout << Days << ":" << Hours << ":" << Minutes << ":" << Seconds;
+
+    return 0;
+}

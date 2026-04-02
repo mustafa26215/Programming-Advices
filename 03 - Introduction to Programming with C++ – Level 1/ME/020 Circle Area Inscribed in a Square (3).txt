@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+// Function to calculate circle area inscribed in a square
+double CalculateInscribedCircleArea(double A)
+{
+    const double PI = 3.14;
+    return (PI * A * A) / 4;
+}
+
+int main()
+{
+    double A, area;
+
+    cout << "Enter square side (A): ";
+    cin >> A;
+
+    area = CalculateInscribedCircleArea(A);
+
+    cout << "Circle Area = " << area;
+
+    return 0;
+}

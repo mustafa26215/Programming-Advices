@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float a, b, c, p, T, Area;
+    const float PI = 3.14;
+
+    cin >> a >> b >> c;
+
+    p = (a + b + c) / 2;
+
+    T = (a * b * c) / (4 * sqrt(p * (p - a) * (p - b) * (p - c)));
+
+    T = T * T;
+
+    Area = PI * T;
+
+    cout << round(Area) << endl;
+
+    return 0;
+}

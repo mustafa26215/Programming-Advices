@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int Mark;
+
+    cout << "Enter your mark: ";
+    cin >> Mark;
+
+    if (Mark >= 50)
+        cout << "PASS";
+    else
+        cout << "Fail";
+
+    return 0;
+}

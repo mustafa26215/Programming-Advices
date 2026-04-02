@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+void readNumbers(int &num1, int &num2) {
+    cout << "Please enter Number1: ";
+    cin >> num1;
+
+    cout << "Please enter Number2: ";
+    cin >> num2;
+}
+
+int sumNumbers(int num1, int num2) {
+    return num1 + num2;
+}
+
+void printResult(int result) {
+    cout << "************************\n";
+    cout << result << endl;
+}
+
+int main() {
+    int n1, n2;
+
+    readNumbers(n1, n2);
+    int result = sumNumbers(n1, n2);
+    printResult(result);
+
+    return 0;
+}

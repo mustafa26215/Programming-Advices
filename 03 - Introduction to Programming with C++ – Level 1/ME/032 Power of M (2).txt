@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num, M;
+    int P = 1;
+    int counter = 0;
+
+    cout << "Enter number: ";
+    cin >> num;
+
+    cout << "Enter M: ";
+    cin >> M;
+
+    while (counter < M)
+    {
+        P = P * num;
+        counter++;
+    }
+
+    cout << P;
+
+    return 0;
+}

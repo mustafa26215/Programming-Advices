@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+// Function to calculate rectangle area
+int CalculateRectangleArea(int a, int b)
+{
+    return a * b;
+}
+
+int main()
+{
+    int a, b, area;
+
+    cout << "Enter length: ";
+    cin >> a;
+
+    cout << "Enter width: ";
+    cin >> b;
+
+    area = CalculateRectangleArea(a, b);
+
+    cout << "Rectangle Area = " << area;
+
+    return 0;
+}

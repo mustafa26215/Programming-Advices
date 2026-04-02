@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+// Function to calculate rectangle area using side and diagonal
+double CalculateRectangleArea(double a, double d)
+{
+    return a * sqrt(d * d - a * a);
+}
+
+int main()
+{
+    double a, d, area;
+
+    cout << "Enter side (a): ";
+    cin >> a;
+
+    cout << "Enter diagonal (d): ";
+    cin >> d;
+
+    area = CalculateRectangleArea(a, d);
+
+    cout << "Rectangle Area = " << area;
+
+    return 0;
+}

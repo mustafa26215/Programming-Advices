@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int Mark1, Mark2, Mark3;
+    double Average;
+
+    cout << "Enter Mark1: ";
+    cin >> Mark1;
+
+    cout << "Enter Mark2: ";
+    cin >> Mark2;
+
+    cout << "Enter Mark3: ";
+    cin >> Mark3;
+
+    Average = (Mark1 + Mark2 + Mark3) / 3.0;
+
+    cout << "Average = " << Average << endl;
+
+    if (Average >= 50)
+        cout << "PASS";
+    else
+        cout << "FAIL";
+
+    return 0;
+}

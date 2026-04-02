@@ -1,0 +1,50 @@
+#include <iostream>
+using namespace std;
+
+void printInfo() {
+    cout << "************************\n";
+    cout << "Name : Mohammed Abu-Hadhoud.\n";
+    cout << "Age  : 44 Years.\n";
+    cout << "City : Amman.\n";
+    cout << "Country : Jordan.\n";
+    cout << "**************************\n";
+}
+
+void printStars() {
+    cout << "*****\n";
+    cout << "*****\n";
+    cout << "*****\n";
+    cout << "*****\n";
+}
+
+void printLetter() {
+    cout << "I Love Programming!\n\n";
+    cout << "I promise to be the best developer ever!\n\n";
+    cout << "I know it will take some time to practice, but I\n";
+    cout << "will achieve my goal.\n\n";
+    cout << "Best Regards,\n";
+    cout << "Mohammed Abu-Hadhoud.\n";
+}
+
+void printShape() {
+    cout << "*      *\n";
+    cout << "*      *\n";
+    cout << "********\n";
+    cout << "*      *\n";
+    cout << "*      *\n";
+}
+
+int main() {
+    printInfo();
+    cout << endl;
+
+    printStars();
+    cout << endl;
+
+    printLetter();
+    cout << endl;
+
+    printShape();
+
+    return 0;
+}

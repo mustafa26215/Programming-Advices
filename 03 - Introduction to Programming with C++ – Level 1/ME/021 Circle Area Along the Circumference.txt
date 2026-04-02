@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double L;
+    cin >> L;
+
+    double PI = 3.14;
+    double Area = (L * L) / (4 * PI);
+
+    cout << Area;
+
+    return 0;
+}

@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int TotalSeconds;
+    cin >> TotalSeconds;
+
+    int SecondsPerDay = 24 * 60 * 60;
+    int SecondsPerHour = 60 * 60;
+    int SecondsPerMinute = 60;
+
+    int NumberOfDays = TotalSeconds / SecondsPerDay;
+    int Remainder = TotalSeconds % SecondsPerDay;
+
+    int NumberOfHours = Remainder / SecondsPerHour;
+    Remainder = Remainder % SecondsPerHour;
+
+    int NumberOfMinutes = Remainder / SecondsPerMinute;
+    Remainder = Remainder % SecondsPerMinute;
+
+    int NumberOfSeconds = Remainder;
+
+    cout << NumberOfDays << ":" << NumberOfHours << ":" << NumberOfMinutes << ":" << NumberOfSeconds;
+
+    return 0;
+}

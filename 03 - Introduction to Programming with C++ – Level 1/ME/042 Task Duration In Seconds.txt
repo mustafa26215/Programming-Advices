@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int NumberOfDays, NumberOfHours, NumberOfMinutes, NumberOfSeconds;
+    cin >> NumberOfDays >> NumberOfHours >> NumberOfMinutes >> NumberOfSeconds;
+
+    int TotalSeconds = (NumberOfDays * 24 * 60 * 60)
+                     + (NumberOfHours * 60 * 60)
+                     + (NumberOfMinutes * 60)
+                     + NumberOfSeconds;
+
+    cout << TotalSeconds << " Seconds";
+
+    return 0;
+}

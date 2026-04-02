@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+    long long factorial = 1;
+
+    // نطلب رقم موجب فقط
+    do
+    {
+        cout << "Enter a positive number: ";
+        cin >> N;
+
+        if (N <= 0)
+            cout << "Factorial Must be Positive Number\n";
+
+    } while (N <= 0);
+
+    // حساب المضروب
+    for (int i = 1; i <= N; i++)
+    {
+        factorial = factorial * i;
+    }
+
+    cout << "Factorial = " << factorial << endl;
+
+    return 0;
+}

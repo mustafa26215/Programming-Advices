@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+// Function to calculate circle area using diameter
+double CalculateCircleAreaByDiameter(double D)
+{
+    const double PI = 3.14;
+    return (PI * D * D) / 4;
+}
+
+int main()
+{
+    double D, area;
+
+    cout << "Enter diameter: ";
+    cin >> D;
+
+    area = CalculateCircleAreaByDiameter(D);
+
+    cout << "Circle Area = " << area;
+
+    return 0;
+}

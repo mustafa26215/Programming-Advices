@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int Num;
+    cin >> Num;
+
+    int HalfNumber = Num / 2;
+    string R = "Half of " + to_string(Num) + " is " + to_string(HalfNumber);
+
+    cout << R;
+
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int LoanAmount, MonthlyInstallment;
+    cin >> LoanAmount >> MonthlyInstallment;
+
+    int TotalMonths = LoanAmount / MonthlyInstallment;
+
+    cout << TotalMonths << " Months";
+
+    return 0;
+}

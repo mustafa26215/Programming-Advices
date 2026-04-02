@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int PIN;
+    int failedCount = 0;
+    int balance = 7500;
+
+    while (failedCount < 3)
+    {
+        cin >> PIN;
+
+        if (PIN == 1234)
+        {
+            cout << "Your Balance is: " << balance;
+            return 0;
+        }
+        else
+        {
+            cout << "Wrong PIN" << endl;
+            failedCount++;
+        }
+    }
+
+    cout << "Card is locked!";
+
+    return 0;
+}

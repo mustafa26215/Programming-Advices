@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+void inputGrades(int arr[], int n){
+    for(int i=0;i<n;i++){
+        cout<<"Enter grade "<<i+1<<": ";
+        cin>>arr[i];
+    }
+}
+
+double average(int arr[], int n){
+    int sum = 0;
+    for(int i=0;i<n;i++){
+        sum += arr[i];
+    }
+    return (double)sum/n;
+}
+
+int main(){
+    int n;
+    cin>>n;
+
+    int grades[n];
+
+    inputGrades(grades,n);
+    cout<<"Average = "<<average(grades,n);
+
+    return 0;
+}

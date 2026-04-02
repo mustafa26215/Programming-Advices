@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Mark1, Mark2, Mark3;
+    cin >> Mark1 >> Mark2 >> Mark3;
+
+    int Avg = (Mark1 + Mark2 + Mark3) / 3;
+
+    cout << Avg;
+
+    return 0;
+}

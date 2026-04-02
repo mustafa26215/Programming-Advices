@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+// Function to calculate circle area
+double CalculateCircleArea(double r)
+{
+    const double PI = 3.14;
+    return PI * r * r;
+}
+
+int main()
+{
+    double r, area;
+
+    cout << "Enter radius: ";
+    cin >> r;
+
+    area = CalculateCircleArea(r);
+
+    cout << "Circle Area = " << area;
+
+    return 0;
+}

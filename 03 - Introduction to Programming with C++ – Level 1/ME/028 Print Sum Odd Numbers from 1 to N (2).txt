@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+    cin >> N;
+
+    int counter = 1;
+    int sum = 0;
+
+    while (counter <= N)
+    {
+        if (counter % 2 != 0)
+        {
+            sum += counter;
+        }
+
+        counter++;
+    }
+
+    cout << sum;
+
+    return 0;
+}

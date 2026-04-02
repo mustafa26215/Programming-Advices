@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+// Function to calculate circle area using circumference
+double CalculateCircleAreaByCircumference(double L)
+{
+    const double PI = 3.14;
+    return (L * L) / (4 * PI);
+}
+
+int main()
+{
+    double L, area;
+
+    cout << "Enter circumference (L): ";
+    cin >> L;
+
+    area = CalculateCircleAreaByCircumference(L);
+
+    cout << "Circle Area = " << area;
+
+    return 0;
+}

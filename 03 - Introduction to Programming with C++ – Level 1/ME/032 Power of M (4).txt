@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int number, M;
+    cin >> number >> M;
+
+    int P = 1;
+    int counter = 0;
+
+    while (counter < M)
+    {
+        P *= number;
+        counter++;
+    }
+
+    cout << P;
+
+    return 0;
+}

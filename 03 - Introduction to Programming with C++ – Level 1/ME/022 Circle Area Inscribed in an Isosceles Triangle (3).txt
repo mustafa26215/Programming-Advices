@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+// Function to calculate circle area inscribed in an isosceles triangle
+double CalculateInscribedCircleArea(double a, double b)
+{
+    const double PI = 3.14;
+    return (PI * b * b / 4) * ((2 * a - b) / (2 * a + b));
+}
+
+int main()
+{
+    double a, b, area;
+
+    cout << "Enter a: ";
+    cin >> a;
+
+    cout << "Enter b: ";
+    cin >> b;
+
+    area = CalculateInscribedCircleArea(a, b);
+
+    cout << "Circle Area = " << area;
+
+    return 0;
+}

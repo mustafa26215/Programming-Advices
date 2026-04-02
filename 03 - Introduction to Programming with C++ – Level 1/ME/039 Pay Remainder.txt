@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int TotalBill, CashPaid;
+    cin >> TotalBill >> CashPaid;
+
+    int Remainder = CashPaid - TotalBill;
+
+    cout << Remainder;
+
+    return 0;
+}

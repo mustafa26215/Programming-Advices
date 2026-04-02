@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int Pennies, Nickels, Dimes, Quarters, Dollars;
+    cin >> Pennies >> Nickels >> Dimes >> Quarters >> Dollars;
+
+    int TotalPennies = Pennies * 1 + Nickels * 5 + Dimes * 10 + Quarters * 25 + Dollars * 100;
+    double TotalDollars = TotalPennies / 100.0;
+
+    cout << TotalPennies << " Pennies" << endl;
+    cout << TotalDollars << " Dollars";
+
+    return 0;
+}

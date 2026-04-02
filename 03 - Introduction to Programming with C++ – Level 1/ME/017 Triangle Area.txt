@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, h;
+    cin >> a >> h;
+
+    int Area = a / 2 * h;
+
+    cout << Area;
+
+    return 0;
+}

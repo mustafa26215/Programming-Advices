@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int counter = 65;
+
+    while (counter <= 90)
+    {
+        cout << char(counter) << endl;
+        counter++;
+    }
+
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    char letter = 'A';
+
+    while (letter <= 'Z')
+    {
+        cout << letter << endl;
+        letter++;
+    }
+
+    return 0;
+}

@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N;
+
+    cin >> N;
+
+    // التأكد أن الرقم موجب
+    while (N <= 0)
+    {
+        cout << "Factorial must be positive number\n";
+        cin >> N;
+    }
+
+    int factorial = 1;
+    int counter = N;
+
+    while (counter >= 1)
+    {
+        factorial *= counter;
+        counter--;
+    }
+
+    cout << factorial;
+
+    return 0;
+}
